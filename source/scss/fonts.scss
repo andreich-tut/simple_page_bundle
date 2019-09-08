@@ -1,0 +1,9 @@
+@mixin setFont($name, $fileName, $weight, $style) {
+    font-family: $name;
+    src: url('../fonts/#{$fileName}.woff2') format('woff2'),
+    url('../fonts/#{$fileName}.woff') format('woff');
+    font-weight: $weight;
+    font-style: $style;
+}
+
+//@include setFont('OpenSans', 'OpenSans-Bold', 700, normal);
